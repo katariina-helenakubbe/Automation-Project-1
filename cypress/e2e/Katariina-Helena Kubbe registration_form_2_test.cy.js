@@ -18,7 +18,7 @@ describe('Section 1: Functional tests', () => {
 
         // Type confirmation password which is different from first password
         cy.get('input[name="password"]').type('jah')
-        cy.get('#confirm').type('jah')
+        cy.get('#confirm').type('jah2')
 
         // Assert that error message is not visible
         cy.get('#password_error_message').should('not.be.visible')
